@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    container_name: "db-postgresql"
+    environment:
+      - POSTGRES_USER=FOO
+      - POSTGRES_PASSWORD=BAZ
+      - POSTGRES_DB=BAR
+    ports:
+      - "1234:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    restart: always
