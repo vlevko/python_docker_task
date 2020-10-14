@@ -41,7 +41,7 @@ def _get():
         print(HTTP_error)
     except Exception as error:
         print(error)
-    threading.Timer(6, _get).start()
+    threading.Timer(600, _get).start()
 
 
 def _main():
