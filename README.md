@@ -10,5 +10,5 @@ $ bash install.sh
 $ source env/Scripts/activate
 $ python server.py
 $ python client.py
-$ docker-compose up
+$ docker-compose up -d
 ```
